@@ -98,10 +98,5 @@ export function removeItemAtBottom(cards) {
  * @returns {boolean} true if there are exactly stackSize number of cards, false otherwise
  */
 export function checkSizeOfStack(cards, stackSize) {
-  for (let i = 0; i < cards.length; i++) {
-    if (cards[i] === stackSize) {
-      return true;
-    }
-  }
-  return false;
+  return cards.length === stackSize;
 }
